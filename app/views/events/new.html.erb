@@ -1,0 +1,23 @@
+Hello Let's create a new event! Shall we
+<h1><%=@sponsee %></h1>
+<sub><%= @sponsee.role%></sub>
+<br>
+<%=link_to 'Log out', user_registration_path,  method: :delete, data: { confirm: 'Are you sure?' } %>
+<br>
+<br>
+<%= form_for @event, url: events_path do |f| %>
+  <!-- select_tag "people", options_for_select(@people.collect {|p| [ p['name'], p['id'] ] })-->
+  <%= f.label 'Event Category'%>
+  <%= f.select :category_type, options_for_select(category_hash(Category::Type))%>
+  <br>
+  <%= f.label 'Description' %>
+  <%= f.text_field :description %>
+  <br>
+  <%= f.label 'Date' %>
+  <%= f.date_select :date %>
+  <br>
+  <%= f.label 'Time' %>
+  <%= f.time_select :time %>
+  <br>
+  <%= f.submit 'Submit Event'%>
+<%end%>
