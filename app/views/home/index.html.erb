@@ -1,9 +1,7 @@
-<body><%=link_to 'I\'m a Sponsee', new_user_registration_path(:q => 'sponsee'), class: 'sponsee btn btn-primary' %>
+<body>
+<div class="main-theatre jumbotron" >
+<h1 id="main-heading" >Dont Just Find A Sponsor, Dont Just be a Sponsor, Build a Relationship</h1>
+<%=link_to 'I\'m a Sponsee', new_user_registration_path(:q => 'sponsee'), class: 'sponsee btn btn-primary' %>
 <%=link_to 'I\'m a Sponsor', new_user_registration_path(:q => 'sponsor'), class: 'sponsor btn btn-primary' %>
-</br>
-<%if user_signed_in? %>
-<%=link_to 'Log out', user_registration_path,  method: :delete, data: { confirm: 'Are you sure?' } %>
-<%else%>
-<%=link_to 'Log In',  new_user_session_path %> 
-<%end %>
+</div>
 </body>

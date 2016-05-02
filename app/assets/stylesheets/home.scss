@@ -1,21 +1,26 @@
 // Place all the styles related to the Home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-body {
-    
+
+.main-theatre {
+    background-image: url(http://www.eventtech.com/wp-content/uploads/2010/09/DSCN0446.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
-}
-.sponsor {
-  position: relative;
-  top: 250px;
-  left: 550px;
 
+}
+
+#main-heading {
+  color: white;
 }
 
 .sponsee {
    position: relative;
-   top: 250px;
-   left: 500px;
+   left: 350px;
 }
+
+.sponsor {
+  position: relative;
+  left: 400px;
+}
+
