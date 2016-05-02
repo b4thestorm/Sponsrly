@@ -3,20 +3,25 @@ include ActiveModel::Model
 attr_accessor :description, :category_type, :date, :time
 
 
-def initialize(opts = {})
-  @description = params['event_form'][description], 
-  @category_type = params['event_form']['category_type'],
-  @date = params['event_form'][date],
-  @time = params['event_form'][time]
-end  
+  def initialize(attributes = {})
+    @description = attributes[:description]
+    @category_type = attributes[:category_type]
+    @date = attributes[:date]
+    @time = attributes[:time]
+  end  
+
+
 
   def submit(params)
-    binding.pry
-    self.description = params[:description]
-    self.category_type = params[:category_type]
-    self.date = params[:date]
-
+        
+    self.description = @description
+    self.category_type = @category_type
+    self.date = @date
+    self.time  = @time
+   
   end 
+  
+
 
   def persisted?
      false

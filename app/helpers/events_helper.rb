@@ -5,5 +5,7 @@ module EventsHelper
         hash["#{x}".to_sym] = i 
          end
     hash
-    end
+  end
+
+  
 end

@@ -17,7 +17,7 @@ Hello Let's create a new event! Shall we
   <%= f.date_select :date %>
   <br>
   <%= f.label 'Time' %>
-  <%= f.time_select :time %>
+  <%= f.time_select :time, {:ampm => true} %>
   <br>
   <%= f.submit 'Submit Event'%>
 <%end%>
