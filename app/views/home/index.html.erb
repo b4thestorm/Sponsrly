@@ -1,5 +1,5 @@
-<body><%=link_to 'I\'m a Sponsee', new_user_registration_path(:q => 'sponsee'), class: 'sponsee' %>
-<%=link_to 'I\'m a Sponsor', new_user_registration_path(:q => 'sponsor'), class: 'sponsor' %>
+<body><%=link_to 'I\'m a Sponsee', new_user_registration_path(:q => 'sponsee'), class: 'sponsee btn btn-primary' %>
+<%=link_to 'I\'m a Sponsor', new_user_registration_path(:q => 'sponsor'), class: 'sponsor btn btn-primary' %>
 </br>
 <%if user_signed_in? %>
 <%=link_to 'Log out', user_registration_path,  method: :delete, data: { confirm: 'Are you sure?' } %>
