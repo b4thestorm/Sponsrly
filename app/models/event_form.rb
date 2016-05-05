@@ -1,24 +1,22 @@
 class EventForm
 include ActiveModel::Model
-attr_accessor :description, :category_type, :date, :time
+attr_accessor :headline, :description, :category_type, :date, :time
 
 
   def initialize(attributes = {})
+    @headline = attributes[:headline]
     @description = attributes[:description]
     @category_type = attributes[:category_type]
     @date = attributes[:date]
     @time = attributes[:time]
+    @sponsee = attributes[:user]
   end  
 
 
 
   def submit(params)
-        
-    self.description = @description
-    self.category_type = @category_type
-    self.date = @date
-    self.time  = @time
-   
+     event = Event.create(headline: @headline, description: @description, start_time: @time, event_date: @date, sponsee: @sponsee)
+     Category.create(name: @category_type, event: event)
   end 
   
 

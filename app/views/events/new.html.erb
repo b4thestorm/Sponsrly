@@ -7,6 +7,9 @@ Hello Let's create a new event! Shall we
 <br>
 <%= form_for @event, url: events_path do |f| %>
   <!-- select_tag "people", options_for_select(@people.collect {|p| [ p['name'], p['id'] ] })-->
+  <%= f.label 'Headline'%>
+  <%= f.text_field :headline %>
+  <br>
   <%= f.label 'Event Category'%>
   <%= f.select :category_type, options_for_select(category_hash(Category::Type))%>
   <br>
