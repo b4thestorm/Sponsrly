@@ -16,7 +16,8 @@ attr_accessor :headline, :description, :category_type, :date, :time
 
   def submit(params)
      event = Event.create(headline: @headline, description: @description, start_time: @time, event_date: @date, sponsee: @sponsee)
-     Category.create(name: @category_type, event: event)
+     #TODO: Associate each event with a category
+    # Category.create(name: @category_type, event: event)
   end 
   
 
