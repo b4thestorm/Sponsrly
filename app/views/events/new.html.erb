@@ -5,7 +5,8 @@ Hello Let's create a new event! Shall we
 <%=link_to 'Log out', user_registration_path,  method: :delete, data: { confirm: 'Are you sure?' } %>
 <br>
 <br>
-<%= form_for @event, url: events_path do |f| %>
+<%=link_to  "Preview Page" %>
+<%= form_for @event, url: events_path, html: { multipart: true } do |f| %>
   <!-- select_tag "people", options_for_select(@people.collect {|p| [ p['name'], p['id'] ] })-->
   <%= f.label 'Headline'%>
   <%= f.text_field :headline %>
@@ -21,6 +22,9 @@ Hello Let's create a new event! Shall we
   <br>
   <%= f.label 'Time' %>
   <%= f.time_select :time, {:ampm => true} %>
+  <br>
+  <%= f.label 'Upload An Event Picture'%>
+  <%= f.file_field :place%>
   <br>
   <%= f.submit 'Submit Event'%>
 <%end%>
