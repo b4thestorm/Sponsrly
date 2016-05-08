@@ -1,7 +1,55 @@
 <body>
-<div class="main-theatre jumbotron" >
-<h1 id="main-heading" >Dont Just Find A Sponsor, Dont Just be a Sponsor, Build a Relationship</h1>
-<%=link_to 'I\'m a Sponsee', new_user_registration_path(:q => 'sponsee'), class: 'sponsee btn btn-primary' %>
-<%=link_to 'I\'m a Sponsor', new_user_registration_path(:q => 'sponsor'), class: 'sponsor btn btn-primary' %>
+<div class="main-theatre" >
+<!-- Add bold font here on heading-->
+<center>
+<h1 id="main-heading" >Build Relationships With The Best Startup Brands Around</h1>
+</center>
+<%=link_to 'I\'m a Sponsee', new_user_registration_path(:q => 'sponsee'), class: 'sponsee-link btn btn-primary' %>
+<%=link_to 'I\'m a Sponsor', new_user_registration_path(:q => 'sponsor'), class: 'sponsor-link btn btn-primary' %>
 </div>
+<div class="row sponsor-promise-box">
+  <div class='col-xs-12'>
+    <h2 class='promise-heading'>Sponsors</h2>
+    <hr class="line-color">
+  </div>
+  <!-- TODO: Add caricature graphics for each Sponsor Promise-->
+    <div class='col-sm-4 col-xs-12'>
+      <h3>Hit a Vein</h3>
+      <p>Find the best potential brands who are finding proven success in their market</p>
+    </div>
+    <div class='col-sm-4 col-xs-12'>
+      <h3>Easy Use</h3>
+      <p>Carefully developed technology that makes it easy to find the best brands for your brand</p>
+    </div>
+    <div class='col-sm-4 col-xs-12'>
+      <h3>Build a Relationship</h3>
+      <p>Tools and captured analytics that help realize all the value of any partnership</p>
+    </div>
+
+      <%=link_to 'I\'m a Sponsor', class: 'btn btn-success '%>
+</div>
+<div class="row sponsee-promise-box" >
+  <div class='col-xs-12'>
+    <h2 class='promise-heading'>Sponsees</h2>
+    <hr class="line-color">
+  </div>
+  <!-- TODO: Add caricature graphics for each Sponsee Promise-->
+    <div class='col-sm-4 col-xs-12'>
+      <h3>Find Great Partners</h3>
+      <p>best network of potential partners from a wide range of fields</p>
+    </div>
+    <div class='col-sm-4 col-xs-12'>
+      <h3>Easy Use</h3>
+      <p>create a profile and an event proposal and we help you find sponsors for your event</p>
+    </div>
+    <div class='col-sm-4 col-xs-12'>
+      <h3>Veni Vedi Vici</h3>
+      <p>Suspendisse venenatis enim volutpat tempor lacinia. Curabitur ornare elementum semper.</p>
+    <div>
+      <%=link_to 'I\'m a Sponsee', class: 'btn btn-success'%>
+</div>
+<div>
+  <h2></h2>
+</div>
+
 </body>

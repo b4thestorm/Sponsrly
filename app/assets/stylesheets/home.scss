@@ -3,24 +3,49 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .main-theatre {
-    background-image: url(http://www.eventtech.com/wp-content/uploads/2010/09/DSCN0446.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100%;
-
+  margin-bottom: 0px;
+  padding: 100px;
+  padding-bottom: 20%;
+  background-color: #f2f2f2;
 }
 
 #main-heading {
-  color: white;
+  font-family: 'Source Serif Pro', serif;
+  padding-bottom: 50px;
 }
 
-.sponsee {
+.sponsee-link {
    position: relative;
    left: 350px;
 }
 
-.sponsor {
+.sponsor-link {
   position: relative;
   left: 400px;
 }
 
+hr {
+  color: black;
+}
+
+
+.promise-heading {
+  position: relative;
+  left: 40%; 
+  font-family: 'Vollkorn', serif;
+  font-weight: 700;
+}
+
+.sponsor-promise-box {
+  padding: 100px;
+  padding-top: 0px;
+  background-color: DarkCyan; 
+
+}
+
+.sponsee-promise-box {
+  padding: 100px;
+  padding-top: 0px;
+  background-color: #f2f2f2;
+  
+}
