@@ -3,14 +3,16 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .main-theatre {
+  margin-top: 0px;
   margin-bottom: 0px;
   padding: 100px;
   padding-bottom: 20%;
   background-color: #f2f2f2;
+  background-image: url("concert.jpg");
 }
 
 #main-heading {
-  font-family: 'Source Serif Pro', serif;
+  font-family: 'Vollkorn', serif;
   padding-bottom: 50px;
 }
 
